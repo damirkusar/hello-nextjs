@@ -2,12 +2,13 @@
   "name": "hello-next",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "node server.js",
     "dev1": "next",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "start3": "node server.js",
     "start2": "next start -p $PORT",
     "start1": "next start",
     "export": "npm run build && next export"
