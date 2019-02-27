@@ -44,7 +44,7 @@ const PostLink = ({ show }) => (
 
 const Index = props => (
   <>
-    <h1>Axpo Titles</h1>
+    <h1>Axpo Titles NEW - ULTRA - Github</h1>
     <ul>
       {props.shows.map(({ show }) => (
         <PostLink key={show.id} show={show} />
