@@ -90,8 +90,8 @@ Post.getInitialProps = async context => {
   // const userAgent = context.req
   //   ? context.req.headers["user-agent"]
   //   : navigator.userAgent;
-  // const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
-  const res = await fetch(`https://api.tvmaze.com/shows/481`);
+  const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
+  // const res = await fetch(`https://api.tvmaze.com/shows/481`);
   const show = await res.json();
 
   console.log(`Fetched show: ${show.name}`);
