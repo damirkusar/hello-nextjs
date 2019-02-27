@@ -6,21 +6,20 @@ import Markdown from "react-markdown";
 
 const Content = withRouter(props => (
   <>
-    <h1>{props.Id}</h1>
     <p>This is the blog post content.</p>
   </>
 ));
 
-const Post = withRouter(props => {
+const Post = ({ show, blog }) => {
   // this.Title = props.router.query.title;
   //   props.Title = "hello damir";
 
   return (
     <>
       <Head>
-        <title>Hello {props.blog.id}, dk</title>
+        <title>Hello {blog.id}, dk</title>
       </Head>
-      <h1>Hello {props.blog.id}</h1>
+      <h1>Hello {blog.id}</h1>
 
       <div className="markdown">
         <Markdown
@@ -36,10 +35,12 @@ And here's the content.
         />
       </div>
 
-      <h1>{props.show.name}</h1>
-      <p>{props.userAgent}</p>
-      <p>{props.show.summary.replace(/<[/]?p>/g, "")}</p>
-      <img src={props.show.image.medium} />
+      <h1>Content</h1>
+      <h1>{show.name}</h1>
+      {/* <p>{props.userAgent}</p> */}
+      {/* <p>{props.show.summary.replace(/<[/]?p>/g, "")}</p> */}
+      <p>{show.summary}</p>
+      <img src={show.image.medium} />
 
       <style jsx global>{`
         .markdown {
@@ -63,7 +64,7 @@ And here's the content.
       `}</style>
     </>
   );
-});
+};
 
 // class Post extends React.Component {
 //   //   static async getInitialProps({ req, query }) {
@@ -86,16 +87,17 @@ And here's the content.
 
 Post.getInitialProps = async context => {
   const { id, title } = context.query;
-  const userAgent = context.req
-    ? context.req.headers["user-agent"]
-    : navigator.userAgent;
-  const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
+  // const userAgent = context.req
+  //   ? context.req.headers["user-agent"]
+  //   : navigator.userAgent;
+  // const res = await fetch(`https://api.tvmaze.com/shows/${id}`);
+  const res = await fetch(`https://api.tvmaze.com/shows/481`);
   const show = await res.json();
 
   console.log(`Fetched show: ${show.name}`);
 
   const blog = { id, title };
-  return { userAgent, blog, show };
+  return { blog, show };
 };
 
 // Post.Title = "Hello from Post test";

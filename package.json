@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "start2": "next start -p $PORT",
-    "start1": "next start"
+    "start1": "next start",
+    "export": "npm run build && next export"
   },
   "keywords": [],
   "author": "",

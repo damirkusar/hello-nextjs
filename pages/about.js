@@ -11,15 +11,16 @@ import Error from "next/error";
 
 class About extends React.Component {
   static async getInitialProps({ req, query }) {
-    const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
+    // const userAgent = req ? req.headers["user-agent"] : navigator.userAgent;
     const Title = "this.props.query.title";
-    return { userAgent, Title };
+    return { Title };
   }
 
   render() {
     return (
       <>
-        Hello World: {this.props.userAgent}
+        {/* Hello World: {this.props.userAgent} */}
+        Hello World
         <Error statusCode={500} />
       </>
     );
