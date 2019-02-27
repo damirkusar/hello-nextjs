@@ -1,3 +1,4 @@
+import "../styles/index.css";
 import Layout from "../components/DefaultLayout.js";
 import GreenLayout from "../components/GreenLayout";
 import Header from "../components/Header";
