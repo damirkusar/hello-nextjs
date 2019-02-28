@@ -12,7 +12,7 @@
     "start2": "next start -p $PORT",
     "start1": "next start",
     "export": "npm run build && next export",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "heroku-postbuild": "next build"
   },
   "keywords": [],
