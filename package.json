@@ -4,14 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "next build",
     "export": "npm run build && next export",
+    "build": "next build",
+    "gcp-build": "npm run build",
+    "deploy": "npm run build && gcloud app deploy",
     "dev": "node server.js",
-    "dev1": "next",
-    "start4": "NODE_ENV=production node server.js",
-    "start3": "node server.js",
-    "start2": "next start -p $PORT",
-    "start1": "next start",
     "start": "node server.js",
     "heroku-postbuild": "npm run build"
   },
