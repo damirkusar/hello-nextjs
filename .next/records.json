@@ -1,0 +1,56 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!styles/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "multi node_modules/next/dist/client/next": 0,
+      "css node_modules/css-loader/index.js??ref--5-1!node_modules/postcss-loader/src/index.js??ref--5-2!styles/index.css 0": 1
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/_app.js": 2,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/_error.js": 3,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/about.js": 4,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/blog.js": 5,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/index.js": 6,
+      "static/CbhFEBSwhIulUxL8lYT0f/pages/post.js": 7,
+      "static/runtime/main.js": 8,
+      "styles": 9
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
