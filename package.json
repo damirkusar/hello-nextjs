@@ -7,7 +7,8 @@
     "export": "npm run build && next export",
     "build": "next build",
     "gcp-build": "npm run build",
-    "deploy": "npm run build && gcloud app deploy",
+    "builddeployGoogle": "npm run build && gcloud app deploy",
+    "deployGoogle": "gcloud app deploy --quiet",
     "dev": "node server.js",
     "start": "node server.js",
     "heroku-postbuild": "npm run build"
