@@ -11,6 +11,7 @@
     "deployGoogle": "gcloud app deploy --quiet",
     "dev": "node server.js",
     "start": "node server.js",
+    "start1": "next start",
     "heroku-postbuild": "npm run build"
   },
   "keywords": [],

@@ -2,7 +2,10 @@ const express = require("express");
 const next = require("next");
 
 const dev = process.env.NODE_ENV !== "production";
+console.log("--------------------------------");
+console.log("NODE_ENV", process.env.NODE_ENV);
 console.log("booooom", dev);
+console.log("--------------------------------");
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
